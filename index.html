@@ -125,12 +125,28 @@
                         </button>
                     </div>
                     <div class="modal-body">
-                        <p> Formulário para segunda </p>
-                    </div>
-                    <div class="modal-footer">
-                        <button> Segunda </button>
-                        <button> Segunda </button>
-                    </div>
+                        <div class="mb-3">
+                            <label for="email" class="form-label"> E-mail </label>
+                            <div class="input-group">
+                                <span class="input-group-text"><i class="bi bi-envelope"></i></span>
+                                <input type="email" id="email" class="form-control" placeholder="seuemail@exemplo.com">
+                            </div>
+
+                            <div class="mb-3">
+                                <label for="senha" class="form-label"> Senha </label>
+                                <div class="input-group">
+                                    <span class="input-group-text"><i class="bi bi-lock"></i></span>
+                                    <input type="password" id="senha" class="form-control">
+                                </div>
+                            </div>
+                            <div id="mensagemErro" class="alert alert-danger d-none">
+                                E-mail ou senha incorretos
+                            </div>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary"> Cancelar </button>
+                            <button type="button" class="btn btn-primary"> Entrar </button>
+                        </div>
                 </form>
             </div>
 
