@@ -10,8 +10,8 @@ formLogin.addEventListener('submit', function (evento) {
   const senhaValida = senha.value.length >= 6;
 
   if (emailValido == true && senhaValida == true) {
-    mensagemErro.classList.add('d-none');
-    window.location.href = 'admin.html';
+    mensagemErro.classList.add('d-none');    
+    window.location.href = 'curso.html'; 
   } else {
     mensagemErro.classList.remove('d-none');
   }
